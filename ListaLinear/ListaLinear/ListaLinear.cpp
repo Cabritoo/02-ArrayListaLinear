@@ -1,8 +1,9 @@
+//Diego de Freitas Guaglianone
 
 #include <iostream>
 using namespace std;
 
-// headers
+// headers /* também é comentário! */
 void menu();
 void inicializar();
 void exibirQuantidadeElementos();
@@ -12,7 +13,7 @@ void buscarElemento();
 //--------------------------
 
 
-const int MAX = 2;;
+const int MAX = 5;
 int lista[MAX]{};
 int nElementos = 0;
 
@@ -54,7 +55,7 @@ void menu()
 		case 6:
 			return;
 		default:
-			break;
+			return;
 		}
 
 		system("pause"); // somente no windows
@@ -65,6 +66,7 @@ void inicializar()
 {
 	nElementos = 0;
 	cout << "Lista inicializada \n";
+	cout << "Droga nao deu pra inicializar... \n";
 
 }
 
@@ -104,5 +106,9 @@ void inserirElemento()
 // deve ser implementada como resposta ao exercicio
 void buscarElemento()
 {
-
+	int busca;
+	for (busca = 0; busca <= nElementos; busca++)
+	{
+		
+	}
 }
